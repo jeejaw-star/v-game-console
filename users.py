@@ -35,8 +35,8 @@ class User():
                 password=input("Please make a password.")
                 print("Just a moment, i'm making a save file...")
                 with open(f"{self.name}_user.json","w") as f:
-                    dump({"name":self.name, "password-hash":generate_password_hash(password), "credits":0, "saves":{}},f, indent=4)
-                self.credits=0
+                    dump({"name":self.name, "password-hash":generate_password_hash(password), "credits":100, "saves":{}},f, indent=4)
+                self.credits=100
                 self.saves={}
                 self.logged_in=True
                 print("Created!")
