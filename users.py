@@ -22,10 +22,12 @@ class User():
                     print("Logged in successfully!")
                 except:
                     print("There was an error while logging in. Please try again.")
+                    self.logged_in=False
                     return
                 self.logged_in=True
             else:
                 print("Incorrect password.")
+                self.logged_in=False
                 return
                     
                 
