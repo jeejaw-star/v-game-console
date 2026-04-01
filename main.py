@@ -22,6 +22,7 @@ def main():
                 print("You don't have enough credits for that. Try some of the free games to earn some!")
         elif game == "2":
             print("See you later!")
+            user.save()
             return 
 
 if __name__ == "__main__":
